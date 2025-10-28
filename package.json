@@ -1,0 +1,27 @@
+{
+  "name": "@staf-design/design-tokens",
+  "private": false,
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "tokens:build": "designsystemet tokens build --config designsystemet.config.json --out-dir design-tokens-build --clean",
+    "prepublishOnly": "npm run tokens:build"
+  },
+  "files": [
+    "designsystemet.config.json",
+    "design-tokens/**",
+    "design-tokens-build/**",
+    "docs/**",
+    "README.md"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "devDependencies": {
+    "@digdir/designsystemet": "^1.7.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
