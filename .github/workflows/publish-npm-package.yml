@@ -24,13 +24,15 @@ jobs:
         run: |
           PACKAGE_NAME=$(node -p "require('./package.json').name")
           PACKAGE_VERSION=$(node -p "require('./package.json').version")
-          if npm view "$PACKAGE_NAME@$PACKAGE_VERSION" version 2>/dev/null; then
+          if npm view --registry https://npm.pkg.github.com "$PACKAGE_NAME@$PACKAGE_VERSION" version 2>/dev/null; then
             echo "Version $PACKAGE_VERSION of $PACKAGE_NAME already exists in the registry."
             echo "Please update the version in package.json before pushing."
             exit 1
           else
             echo "Version $PACKAGE_VERSION is new and can be published."
           fi
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install dependencies
         run: npm ci
