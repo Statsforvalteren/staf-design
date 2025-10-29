@@ -26,7 +26,7 @@ jobs:
           PACKAGE_VERSION=$(node -p "require('./package.json').version")
           if npm view --registry https://npm.pkg.github.com "$PACKAGE_NAME@$PACKAGE_VERSION" version 2>/dev/null; then
             echo "Version $PACKAGE_VERSION of $PACKAGE_NAME already exists in the registry."
-            echo "Please update the version in package.json before pushing."
+            echo "Please bump the version in package.json to publish a new version."
             exit 1
           else
             echo "Version $PACKAGE_VERSION is new and can be published."
