@@ -7,11 +7,11 @@
     "font-weight": {
       "medium": {
         "$type": "fontWeights",
-        "$value": "Medium"
+        "$value": "SemiBold"
       },
       "semibold": {
         "$type": "fontWeights",
-        "$value": "Semi bold"
+        "$value": "Bold"
       },
       "regular": {
         "$type": "fontWeights",
