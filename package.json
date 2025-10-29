@@ -1,5 +1,5 @@
 {
-  "name": "@staf/designsystemet-theme",
+  "name": "@statsforvalteren/designsystemet-theme",
   "description": "Tema for statsforvaltarane ved bruk av Designsystemet frå Digdir.",
   "private": false,
   "version": "1.0.0",
@@ -28,6 +28,7 @@
     "@digdir/designsystemet": "^1.7.0"
   },
   "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
     "access": "public"
   }
 }
