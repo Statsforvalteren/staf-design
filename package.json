@@ -1,20 +1,26 @@
 {
-  "name": "@staf-design/design-tokens",
+  "name": "@staf/designsystemet-theme",
+  "description": "Tema for statsforvaltarane ved bruk av Designsystemet frå Digdir.",
   "private": false,
   "version": "1.0.0",
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "tokens:build": "designsystemet tokens build --config designsystemet.config.json --out-dir design-tokens-build --clean",
+    "tokens:build": "designsystemet tokens build --config designsystemet.config.json --out-dir dist --clean",
     "prepublishOnly": "npm run tokens:build"
   },
   "files": [
     "designsystemet.config.json",
     "design-tokens/**",
-    "design-tokens-build/**",
+    "dist/**",
     "docs/**",
     "README.md"
   ],
+  "main": "dist/staf-design.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Statsforvalteren/staf-design.git"
+  },
   "sideEffects": [
     "**/*.css"
   ],
