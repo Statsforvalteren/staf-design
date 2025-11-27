@@ -2,7 +2,7 @@
   "staf-design": {
     "font-family": {
       "$type": "fontFamilies",
-      "$value": "Open Sans"
+      "$value": "Inter"
     },
     "font-weight": {
       "medium": {

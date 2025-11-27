@@ -2,16 +2,16 @@
   "staf-design": {
     "font-family": {
       "$type": "fontFamilies",
-      "$value": "Open Sans"
+      "$value": "Inter"
     },
     "font-weight": {
       "medium": {
         "$type": "fontWeights",
-        "$value": "SemiBold"
+        "$value": "Medium"
       },
       "semibold": {
         "$type": "fontWeights",
-        "$value": "Bold"
+        "$value": "Semi bold"
       },
       "regular": {
         "$type": "fontWeights",
