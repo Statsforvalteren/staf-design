@@ -6,7 +6,9 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      checks: write
+      contents: write
+      pull-requests: write
       packages: write
     steps:
       - name: Checkout repository
