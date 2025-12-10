@@ -2,7 +2,7 @@
   "name": "@statsforvalteren/designsystemet-theme",
   "description": "Tema for statsforvaltarane ved bruk av Designsystemet frå Digdir.",
   "private": false,
-  "version": "1.0.3",
+  "version": "1.0.2",
   "license": "MIT",
   "type": "module",
   "scripts": {
