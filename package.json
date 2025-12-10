@@ -25,7 +25,11 @@
     "**/*.css"
   ],
   "devDependencies": {
-    "@digdir/designsystemet": "^1.8.0"
+    "@digdir/designsystemet": "^1.8.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^9.0.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.0"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com",
