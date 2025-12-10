@@ -25,7 +25,7 @@
     "**/*.css"
   ],
   "devDependencies": {
-    "@digdir/designsystemet": "^1.7.0"
+    "@digdir/designsystemet": "^1.8.0"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com",
